@@ -1,3 +1,10 @@
+/*
+Статья на основе которой написан код: https://habr.com/ru/companies/ruvds/articles/561108/
+
+lib: https://pkg.go.dev/github.com/gorilla/mux
+
+
+*/
 package gorilla_routers
 
 import (

@@ -1,3 +1,13 @@
+/*
+
+Статья на основе которой написан (скопирован код :-) )  https://habr.com/ru/companies/ruvds/articles/562878/
+
+Исходники: https://github.com/eliben/code-for-blog/tree/master/2021/go-rest-servers/gin
+
+lib: https://github.com/gin-gonic/gin
+
+*/
+
 package gin_router
 
 import (
@@ -116,5 +126,6 @@ func InitRouterGin(port string) {
 	router.DELETE("/task/:id", server.deleteTaskHandler)
 	router.GET("/tag/:tag", server.tagHandler)
 	router.GET("/due/:year/:month/:day", server.dueHandler)
+
 	router.Run("localhost:" + port)
 }
